@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'posts#index'
+  root to: 'post#index'
   resources :posts, except: :index
   resources :users, only: :show
 end
